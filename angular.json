@@ -76,6 +76,7 @@
           "options": {
             "polyfills": [
               "zone.js",
+              "@angular/localize/init",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
