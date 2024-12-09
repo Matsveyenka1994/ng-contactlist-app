@@ -27,6 +27,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -75,6 +76,7 @@
           "options": {
             "polyfills": [
               "zone.js",
+              "@angular/localize/init",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
@@ -92,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
