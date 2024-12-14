@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ContactListComponent} from './components/contact-list/contact-list.component';
 
 @Component({
@@ -9,5 +9,5 @@ import {ContactListComponent} from './components/contact-list/contact-list.compo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
- title: string = 'Contacts';
+  title: string = 'Contacts';
 }
