@@ -39,8 +39,8 @@ export class ContactListComponent {
   isCreateModus: boolean = false;
 
   toggleCreateModus() {
-   this.isCreateModus = !this.isCreateModus;
-   alert('toggled' + this.isCreateModus);
+    this.isCreateModus = !this.isCreateModus;
+    alert('toggled' + this.isCreateModus);
   }
 
   onSaveContact(newContact: Contact) {

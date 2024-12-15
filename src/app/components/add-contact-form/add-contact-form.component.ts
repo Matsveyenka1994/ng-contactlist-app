@@ -21,22 +21,22 @@ export class AddContactFormComponent {
 
 
   model: Contact = {
-   firstName: '',
-   lastName: '',
-   phone: '',
-   email: '',
-   address: ''
- };
-
-  onClickSave() {
-  this.onSave.emit(Object.assign({}, this.model));
-  this.model= {
     firstName: '',
     lastName: '',
     phone: '',
     email: '',
     address: ''
-  }
+  };
+
+  onClickSave() {
+    this.onSave.emit(Object.assign({}, this.model));
+    this.model = {
+      firstName: '',
+      lastName: '',
+      phone: '',
+      email: '',
+      address: ''
+    }
   }
 
   onClickCancel() {
