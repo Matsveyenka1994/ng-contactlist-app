@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Contact} from '../../../model/contact';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {EditContactFormComponent} from '../../edit-contact-form/edit-contact-form.component';
 
 @Component({
@@ -33,7 +33,8 @@ export class ContactListElementComponent {
   }
 
   onClickEdit() {
-    this.modalService.open(EditContactFormComponent);
+    const modalRef:NgbModalRef = this.modalService.open(EditContactFormComponent);
+    modalRef.componentInstance.contactToEdit = this.contactToDisplay;
 
   }
 }
